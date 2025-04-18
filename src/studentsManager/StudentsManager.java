@@ -17,6 +17,9 @@ public class StudentsManager {
 
     public void registerNewStudent() {
         Object[] data = getData();
+        // public Student(String ID, FullName fullName, String birthday, MarkQualification[] markQualification) {
+        // Fíjate bien que no cumples con lo que tú mismo has definido en el constructor de Student.
+        // Tienes que pasarle, como segundo parámetro, un objeto del registro Fullname
         student = new Student((String) data[0], (FullName) data[1],(FullName) data[2], (FullName) data[3], (String) data[4], (MarkQualification[]) data[5], (MarkQualification[]) data[6], (MarkQualification[]) data[7], (MarkQualification[]) data[8]);
         studentList.add(student);
     }
